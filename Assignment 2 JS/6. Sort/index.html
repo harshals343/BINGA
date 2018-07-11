@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> Todo App </title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Log Book">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Harshal Sakare">
+    
+        <script>
+        
+
+        // Scratch Code
+        function sort( arr, sorting_type)
+        {
+           if( sorting_type == "asc" )
+           {
+
+               for(var index=0;index<arr.length-1;index++)
+               {
+                   for(j=index+1;j<arr.length;j++)
+                   {
+                       if(arr[j]<arr[index])
+                       {
+                           var temp = arr[index];
+                           arr[index]= arr[j];
+                           arr[j]=temp; 
+                       }
+                   }
+               }
+
+
+           }else if( sorting_type == "desc" )
+           {
+
+               
+               for(var index=0;index<arr.length-1;index++)
+               {
+                   for(j=index+1;j<arr.length;j++)
+                   {
+                       if(arr[j]>arr[index])
+                       {
+                           var temp = arr[index];
+                           arr[index]= arr[j];
+                           arr[j]=temp; 
+                       }
+                   }
+               }
+
+
+
+               
+           }else{
+
+               return "Enter Correct Sorting Type.";
+           } 
+
+           return arr;
+        }
+
+
+        // In built Functions
+        function sortUsingBuiltIn( arr, sorting_type)
+        {
+           if( sorting_type == "asc" )
+           {
+               arr.sort(function(a, b){return a - b});
+
+           }else if( sorting_type == "desc" )
+           {
+               arr.sort(function(a, b){return a - b});
+               arr.reverse();
+
+           }else{
+
+               return "Enter Correct Sorting Type.";
+           } 
+
+           return arr;
+        }
+
+
+
+        console.log(sort([3,2,45,6],'asc')); // Asending
+
+        console.log(sort([3,2,45,6],'desc')); // Descending
+
+        console.log(sort([3,2,45,6],'ascee')); // Wrong Input
+
+        console.log(sortUsingBuiltIn([3,2,45,6,4,6,2,1,4,2,4],'asc')); // Ascending using built functions
+     
+        console.log(sortUsingBuiltIn([3,2,45,6,4,6,2,1,4,2,4],'desc')); // Descending using built functions
+
+        </script>
+      
+    </head>
+
+    <body>
+        
+    </body>
+
+
+</html>

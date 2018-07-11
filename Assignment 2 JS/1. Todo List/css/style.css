@@ -1,0 +1,53 @@
+ul{
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+}
+
+li{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.2em;
+    margin-left: -12em;
+}
+
+input[type=checkbox]{
+
+    margin-right: 0.3em;
+}
+
+body{
+    text-align:center;
+    background-color: lightblue;
+}
+
+.upper-items
+{
+    margin:3em;
+
+}
+
+
+button#addTodoButton{
+	text-align:center;
+	font-size:2em;
+	height:2em;
+	width:3em;
+    border-radius: 2px;
+}
+
+
+
+input#todoTextInput{
+	height:4em;
+    padding:15px 20px;
+    border-width: 1px;
+    vertical-align: top;
+
+}
+
+
+
+.list{
+    text-align:center;
+}

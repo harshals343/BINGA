@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> Todo App </title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Log Book">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Harshal Sakare">
+    
+        <script>
+        
+        function addAll(... elements)
+        {
+            var total= 0;
+
+            for(element of elements)
+            {
+                total = total + element;
+            }
+
+            return total;
+        }
+
+        console.log(addAll(1,2,3,4)); // 4 Elements
+
+        console.log(addAll(1,2,3,4,50,12,12,12,13,1)); // 10 Elements
+        
+        console.log(addAll()); // 0 Elements
+        
+        console.log(addAll(10)); // 1 Elements
+
+
+        </script>
+      
+    </head>
+
+    <body>
+        
+    </body>
+
+
+</html>

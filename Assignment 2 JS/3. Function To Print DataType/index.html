@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title> Todo App </title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Log Book">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Harshal Sakare">
+    
+        <script>
+        
+            function getDataType( object )
+            {
+                if(Array.isArray(object))
+                {
+                    return "array";
+                }else
+                {
+
+                    return (typeof object);
+                }
+            }
+        
+            var num =10;
+            console.log(getDataType(num));
+            
+            var str = "Hi Good Morning";
+            console.log(getDataType(str));
+            
+            var obj = {};
+            console.log(getDataType(obj));
+
+            var arr = [];
+            console.log(getDataType(arr));
+
+            var bool = true;
+            console.log(getDataType(bool));
+
+            var undef ;
+            console.log(getDataType(undef));
+        </script>
+      
+    </head>
+
+    <body>
+        
+    </body>
+
+
+</html>
